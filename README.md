@@ -1,21 +1,55 @@
-# geeksessions-streamlit
+# geeksessions-streamlit, May 22, 2024
 streamlit dashboard kickstarter
 
-* Minimalistic way how to create `streamlit` interactive dashboard using examplery ML Iris dataset. 
-* You see that in 130 lines of code, you train model, visualize results, and create interactive environment for the user to look into your KMeans clustering.
+* Minimalistic way how to create `streamlit` interactive dashboard using exemplary ML Iris dataset. 
+* With 130 lines of code, you train model, visualize results, and create interactive environment for the user to look into your KMeans clustering.
 
-## Geeksessions 2024 May 22
-1. Clone the miniprojects repository
+## Before running the app
+* to investigate how the codes work, play with the jupyter NB
+* Btw. Colab has free GPU support.
+* This can be done out of the repository, no python needed, not even repo cloning.
+
+|   | Run | Run | View |
+| - | --- | --- | ---- |
+| Iris dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Py-ualg/geeksessions-streamlit/blob/main/iris_processing.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Py-ualg/geeksessions-streamlit/HEAD?labpath=iris_processing.ipynb) | [![View the notebook](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/Py-ualg/geeksessions-streamlit/blob/main/iris_processing.ipynb?flush_cache=true)
+
+## To run the app
+1. Clone the repository
+
+## Running locally
+* `pip install -r requirements.txt`
+* `streamlit run app.py`
+* In the upper right hand corner is option to deploy the app.
+
+## No python
+1. You can still deploy and edit with codespaces without much testing though.
 2. Go to [streamlit](https://streamlit.io)
 3. Sign in with GH, gmail or other
     * If you want to run dashboard from your organization, follow instructions [here](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions)
 4. Create app
-    * repo: .
+    * repo: Py-ualg/geeksessions-streamlit
     * branch: main
     * Main file-path: app.py
-    * app URL: UP-TO-YOU
+    * app URL: UP-TO-YOU (btw. `meetyballs`, `meetballs` is not allowed because it contains "profanities"). We should complain. Luckily one `meatball`.
 5. You should have the app functional and running
 
-### Running locally
-* `pip install streamlit`
-* `streamlit run streamlit_dashboard/app.py`
+## Two ways to continue
+### Expand the dashboard capabilities individually
+1. For each input, in addition to classification, show also the probabilities of classes
+2. `Model` tab: How to visualize the 4D data:
+    * pairplot (seaborn library)
+    * 3D + color hue?
+3. `Prediction` tab: Visualize input values against training data using the plotClusters function
+
+### Group work: Given that not all must be interested in streamlit
+1. Let's make interactive dashboard which is useful for GeekSessions community
+2. List of active tech people in Algarve
+3. Events
+4. Contacts and calendar
+5. Skills for collaborating
+
+#### We need
+* Database (tables in pandas for simplicity)
+* visualization (maps, calendar, links)
+* search
+
