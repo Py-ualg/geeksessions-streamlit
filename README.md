@@ -6,8 +6,8 @@ streamlit dashboard kickstarter
 
 ## Before running the app
 * to investigate how the codes work, play with the jupyter NB
-* Btw. Colab has free GPU support.
-* This can be done out of the repository, no python needed, not even repo cloning.
+* Btw. Colab has free GPU support, if you ever need it for ML testing.
+* This can be done using the links below, no python needed.
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
@@ -30,16 +30,18 @@ streamlit dashboard kickstarter
     * repo: Py-ualg/geeksessions-streamlit
     * branch: main
     * Main file-path: app.py
-    * app URL: UP-TO-YOU (btw. `meetyballs`, `meetballs` is not allowed because it contains "profanities"). We should complain. Luckily one `meatball`.
+    * app URL: UP-TO-YOU.
 5. You should have the app functional and running
 
 ## Two ways to continue
 ### Expand the dashboard capabilities individually
 1. For each input, in addition to classification, show also the probabilities of classes
+    * KMeans are not good for that, perhaps try [XBoost classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html#sklearn.ensemble.GradientBoostingClassifier).
 2. `Model` tab: How to visualize the 4D data:
     * pairplot (seaborn library)
     * 3D + color hue?
-3. `Prediction` tab: Visualize input values against training data using the plotClusters function
+    * Confusion matrix (for train and test data), [docs](https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#confusion-matrix).
+3. `Prediction` tab: Visualize input values against testing data using the plotClusters function
 
 ### Group work: Given that not all must be interested in streamlit
 1. Let's make interactive dashboard which is useful for GeekSessions community
